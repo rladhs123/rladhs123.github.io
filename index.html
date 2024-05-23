@@ -2,10 +2,102 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="user-scalable=no, maximum-scale=1, width=device-width, initial-scale=1.0">
+    <title>Introduce</title>
+    <script>
+        window.onload = function() {
+            var button1 = document.getElementById("button2");
+
+            button1.addEventListener("click", function(){
+                document.getElementById("first_page").style.display="none";
+                document.getElementById("second_page").style.display="block";
+            })
+        }
+    </script>
+    <style>
+        * { margin: 0; padding: 0; }
+        body {
+            background-image: linear-gradient(to top, blue, skyblue) ;
+        }
+        /* First_fage */
+        button {
+            background-color: rgb(38, 118, 231);
+            float: right;
+            margin-left: 10px;
+        }
+        #first_img {
+            position: relative;
+        }
+        #first_text {
+            position: relative;
+            margin-top: 350px;
+            
+            text-align: center;
+        }
+        img {
+            width: 300px; height: 300px;
+            position: absolute;
+            left: 50%; 
+            margin-left: -150px; margin-top: -320px;
+        }
+        #navigation {
+            background-color: rgb(38, 118, 231);
+        }
+        
+       
+    </style>
 </head>
 <body>
-    <h1>Hello World!!</h1>
+    <div class="container">
+        <header id="header">
+            
+        </header>
+        <nav id="navigation">
+            <div>
+                <span>김 온</span>
+                <button id="button3">page3</button>
+                <button id="button2">page2</button>
+                <button id="button1">정보</button>
+            </div>
+        </nav>
+        
+        <section id="first_page">
+            <div id="first_img">
+                <img src="./myImg.jpg" alt="">
+            </div>
+            <div id="first_text">
+                <div>
+                    <h2 style="margin-bottom: 10px;">김 온</h2>
+                    <h6 style="margin-bottom: 5px;">2000년 9월 21일</h6>
+                    <h6 style="margin-bottom: 20px;">강원대학교 컴퓨터공학과 2학년</h6>
+                </div>            
+                <div>
+                    <p>안녕하세요. 저는 컴퓨터공학과 2학년에 재학중인 김온입니다. <br>
+                    군대를 다녀와서 수능을 쳤고 강원대학교에 입학 했습니다. <br>
+                    자유 전공 학부로 입학 하였으며 전공 배정을 컴퓨터공학과로 하여 <br>
+                    열심히 공부하고 있습니다.
+                    </p>
+                    <br>
+                    <p style="margin-bottom: 30px;">저는 좋아하는 것을 찾는 것도 중요하다고 생각하지만 <br>
+                       찾기 어려운 경우에 덜 하기 싫은 것을 선택하는 방법이 좋다고 생각합니다. <br>
+                       그렇기 때문에 컴퓨터공학과로 전공을 선택했습니다.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="second_page" style="display: none;">
+            <h1>hello</h1>
+
+
+        </section>
+
+        <section id="third_page">
+
+
+
+        </section>
+    </div>
 </body>
 </html>
