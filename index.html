@@ -6,52 +6,71 @@
     <title>Introduce</title>
     <script>
         window.onload = function() {
-            var button1 = document.getElementById("button2");
+            var button2 = document.getElementById("button2");
 
-            button1.addEventListener("click", function(){
-                document.getElementById("first_page").style.display="none";
-                document.getElementById("second_page").style.display="block";
-            })
+            button2.addEventListener("click", function(){
+                document.getElementById("first_page").style.display = "none";
+                document.getElementById("second_page").style.display = "block";
+            });
         }
     </script>
     <style>
-        * { margin: 0; padding: 0; }
-        body {
-            background-image: linear-gradient(to top, blue, skyblue) ;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        /* First_fage */
+        html, body {
+            height: 100%;
+        }
+        body {
+            background-image: linear-gradient(to bottom, blue, skyblue);
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
         button {
             background-color: rgb(38, 118, 231);
             float: right;
             margin-left: 10px;
-        }
-        #first_img {
-            position: relative;
-        }
-        #first_text {
-            position: relative;
-            margin-top: 350px;
-            
-            text-align: center;
-        }
-        img {
-            width: 300px; height: 300px;
-            position: absolute;
-            left: 50%; 
-            margin-left: -150px; margin-top: -320px;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
         }
         #navigation {
             background-color: rgb(38, 118, 231);
+            padding: 10px;
         }
-        
-       
+        #first_img {
+            position: relative;
+            text-align: center;
+            margin: 20px 0;
+        }
+        #first_text {
+            text-align: center;
+            padding: 20px;
+        }
+        img {
+            width: 300px;
+            height: 300px;
+        }
+        section {
+            flex: 1;
+            padding: 20px;
+        }
+        #second_page {
+            display: none;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <header id="header">
-            
-        </header>
+        <header id="header"></header>
         <nav id="navigation">
             <div>
                 <span>김 온</span>
@@ -84,20 +103,13 @@
                     </p>
                 </div>
             </div>
-
         </section>
 
-        <section id="second_page" style="display: none;">
-            <h1>hello</h1>
-
-
+        <section id="second_page">
+            <h1>Hello</h1>
         </section>
 
-        <section id="third_page">
-
-
-
-        </section>
+        <section id="third_page"></section>
     </div>
 </body>
 </html>
