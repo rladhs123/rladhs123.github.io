@@ -40,143 +40,70 @@
             margin: 0;
             padding: 0;
         }
-        @media (max-width: 499px) { 
-            body {
+        body {
                 background-color: #CAF4FF;
-            }
-            .container {
+        }
+        .container {
                 min-height: 100%;
                 display: flex;
                 flex-direction: column;
-            }
-            button {
-                background-color: #6DC5D1;
-                float: right;
-                margin-left: 10px;
-                color: white;
-                border: none;
-                padding: 10px 20px;
-                cursor: pointer;
-                font-size: medium;
-            }
+        }
+        button {
+            background-color: #6DC5D1;
+            float: right;
+            margin-left: 10px;
+            color: white;
+            border: none;
+            padding: 10px ;
+            cursor: pointer;
+            font-size: medium;
+        }
+        #navigation {
+            background-color: #6DC5D1;
+            padding: 10px;
+        }
+        #first_img, #second_img, #third_img {
+            position: relative;
+            text-align: center;
+            margin: 20px 0;
+        }
+        #first_text, #second_text, #third_text {
+            text-align: center;
+            padding: 20px;
+        }
+        img {
+            width: 300px;
+            height: 300px;
+        }
+        section {
+            flex: 1;
+            padding: 20px;
+            display: none; /* All sections hidden by default */
+        }
+        /* Specific sections */
+        #first_page {
+            display: block; /* First page displayed by default */
+        }
+        @media (max-width: 499px) { 
             #navigation {
                 background-color: #6DC5D1;
                 padding: 10px;
-            }
-            #first_img, #second_img, #third_img {
-                position: relative;
-                text-align: center;
-                margin: 20px 0;
-            }
-            #first_text, #second_text, #third_text {
-                text-align: center;
-                padding: 20px;
-            }
-            img {
-                width: 300px;
-                height: 300px;
-            }
-            section {
-                flex: 1;
-                padding: 20px;
-                display: none; /* All sections hidden by default */
-            }
-            /* Specific sections */
-            #first_page {
-                display: block; /* First page displayed by default */
+                flex-direction: column;
             }
         }
         @media (min-width: 500px) and (max-width: 799px) {
-            body {
-                background-color: #CAF4FF;
-            }
-            .container {
-                min-height: 100%;
-                display: flex;
-                flex-direction: column;
-            }
-            button {
-                background-color: #6DC5D1;
-                float: right;
-                margin-left: 10px;
-                color: white;
-                border: none;
-                padding: 10px 20px;
-                cursor: pointer;
-                font-size: medium;
-            }
-            #navigation {
-                background-color: #6DC5D1;
-                padding: 10px;
-            }
-            #first_img, #second_img, #third_img {
-                position: relative;
-                text-align: center;
-                margin: 20px 0;
-            }
             #first_text, #second_text, #third_text {
                 text-align: center;
                 padding: 20px;
-            }
-            img {
-                width: 300px;
-                height: 300px;
-            }
-            section {
-                flex: 1;
-                padding: 20px;
-                display: none; /* All sections hidden by default */
-            }
-            /* Specific sections */
-            #first_page {
-                display: block; /* First page displayed by default */
             }
         }
         @media (min-width: 800px) {
-            body {
-                background-color: #CAF4FF;
-            }
-            .container {
-                min-height: 100%;
-                display: flex;
-                flex-direction: column;
-            }
-            button {
-                background-color: #6DC5D1;
-                float: right;
-                margin-left: 10px;
-                color: white;
-                border: none;
-                padding: 10px 20px;
-                cursor: pointer;
-                font-size: medium;
-            }
-            #navigation {
-                background-color: #6DC5D1;
-                padding: 10px;
-            }
-            #first_img, #second_img, #third_img {
-                position: relative;
-                text-align: center;
-                margin: 20px 0;
-            }
+            
             #first_text, #second_text, #third_text {
-                text-align: center;
+                text-align: center; font-size: xx-large;
                 padding: 20px;
             }
-            img {
-                width: 300px;
-                height: 300px;
-            }
-            section {
-                flex: 1;
-                padding: 20px;
-                display: none; /* All sections hidden by default */
-            }
-            /* Specific sections */
-            #first_page {
-                display: block; /* First page displayed by default */
-            }
+            
         }
     </style>
 </head>
@@ -186,9 +113,11 @@
         <nav id="navigation">
             <div>
                 <span style="font-size: xx-large; color: white;">김 온</span>
-                <button id="button3">page3</button>
-                <button id="button2">좋아하는 것</button>
-                <button id="button1">정보</button>
+                <div>
+                    <button id="button3">page3</button>
+                    <button id="button2">좋아하는 것</button>
+                    <button id="button1">정보</button>
+                </div>
             </div>
         </nav>
         
