@@ -78,20 +78,21 @@
         section {
             flex: 1;
             padding: 20px;
-            display: none; /* All sections hidden by default */
+            display: none; 
         }
-        /* Specific sections */
+        
         #first_page {
-            display: block; /* First page displayed by default */
+            display: block; 
         }
-        @media (max-width: 499px) { 
+
+        @media (max-width: 345px) { 
             #navigation {
                 background-color: #6DC5D1;
                 padding: 10px;
                 flex-direction: column;
             }
         }
-        @media (min-width: 500px) and (max-width: 799px) {
+        @media (min-width: 346px) and (max-width: 799px) {
             #first_text, #second_text, #third_text {
                 text-align: center;
                 padding: 20px;
@@ -112,12 +113,10 @@
         <header id="header"></header>
         <nav id="navigation">
             <div>
-                <span style="font-size: xx-large; color: white;">김 온</span>
-                <div>
-                    <button id="button3">page3</button>
+                <span style="font-size: xx-large; color: white;">My Page</span>
+                    <button id="button3">성격</button>
                     <button id="button2">좋아하는 것</button>
                     <button id="button1">정보</button>
-                </div>
             </div>
         </nav>
         
@@ -153,44 +152,46 @@
             <div id="second_text">
                 <div>
                     <h2 style="margin-bottom: 10px;">주짓수</h2>
-                    <h6 style="margin-bottom: 5px;">2000년 9월 21일</h6>
-                    <h6 style="margin-bottom: 20px;">강원대학교 컴퓨터공학과 2학년</h6>
                 </div>            
                 <div>
-                    <p>안녕하세요. 저는 컴퓨터공학과 2학년에 재학중인 김온입니다. <br>
-                    군대를 다녀와서 수능을 쳤고 강원대학교에 입학 했습니다. <br>
-                    자유 전공 학부로 입학 하였으며 전공 배정을 컴퓨터공학과로 하여 <br>
-                    열심히 공부하고 있습니다.
+                    <p>2023년 12월에 주짓수를 시작했고 2024년 3월 화이트벨트 1그랄로 승급했다.<br>
+                       유튜브로도 주짓수 영상을 자주 본다. <br>
+                       지금은 잠시 쉬고있지만 대학을 졸업하면 다시 시작할 예정이다.<br>
                     </p>
                     <br>
-                    <p style="margin-bottom: 30px;">저는 좋아하는 것을 찾는 것도 중요하다고 생각하지만 <br>
-                       찾기 어려운 경우에 덜 하기 싫은 것을 선택하는 방법이 좋다고 생각합니다. <br>
-                       그렇기 때문에 컴퓨터공학과로 전공을 선택했습니다.
-                    </p>
                 </div>
+                <div id="second_img">
+                    <div>
+                        <img src="./cat.jpg" alt="" style="max-width: 50%; height: auto; float: left;">
+                    </div>
+                    <img src="./peach.jpg" alt="" style="max-width: 50%; height: auto;">
+                </div>
+                <div id="second_text">
+                    <div>
+                        <h2 style="margin-bottom: 10px;">고양이 & 복숭아</h2>
+                    </div>            
+                    <div>
+                        <p>길에서 고양이를 보면 사진을 찍을만큼 좋아한다.<br>
+                           나중에 할아버지가 되면 친구와 복숭아 농장을 만들자고 약속도<br>
+                           할만큼 복숭아를 좋아한다.
+                        </p>
+                        <br>
+                    </div>    
             </div>
         </section>
 
         <section id="third_page">
             <div id="third_img">
-                <img src="./cat.jpg" alt="" style="max-width: 100%; height: auto;">
+                <img src="./mbti.jpg" alt="" style="max-width: 50%; height: auto;">
             </div>
             <div id="third_text">
                 <div>
-                    <h2 style="margin-bottom: 10px;">김 온</h2>
-                    <h6 style="margin-bottom: 5px;">2000년 9월 21일</h6>
-                    <h6 style="margin-bottom: 20px;">강원대학교 컴퓨터공학과 2학년</h6>
-                </div>            
-                <div>
-                    <p>안녕하세요. 저는 컴퓨터공학과 2학년에 재학중인 김온입니다. <br>
-                    군대를 다녀와서 수능을 쳤고 강원대학교에 입학 했습니다. <br>
-                    자유 전공 학부로 입학 하였으며 전공 배정을 컴퓨터공학과로 하여 <br>
-                    열심히 공부하고 있습니다.
-                    </p>
-                    <br>
-                    <p style="margin-bottom: 30px;">저는 좋아하는 것을 찾는 것도 중요하다고 생각하지만 <br>
-                       찾기 어려운 경우에 덜 하기 싫은 것을 선택하는 방법이 좋다고 생각합니다. <br>
-                       그렇기 때문에 컴퓨터공학과로 전공을 선택했습니다.
+                    <p style="font-size: larger;">
+                        혼자있는 것을 좋아하고 호기심이 많다. <br>
+                        사람이 많은 곳에 가면 기가 빨려서 피하는 편이다. <br>
+                        다른 사람의 말을 100% 신뢰하지 않는다. <br>
+                        이해가 가지 않으면 쉽게 인정하지 못한다. 고집이 세다고 들어왔다. <br>
+                        그럼에도 소통 능력은 꽤 좋은 편이라 큰 트러블은 없었다.
                     </p>
                 </div>
             </div>
